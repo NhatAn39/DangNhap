@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="~/Content/mystyle.css" />
+</head>
+<body>
+    <div class="sign-in">
+        <img src="~/img/usericon.png" />
+        <h1>Đăng nhập</h1>
+        <form>
+            <input type="email" class="input-box" placeholder="Nhập email của bạn">
+            <input type="password" class="input-box" placeholder="Mật khẩu">
+            <button type="button" class="signin-btn">Đăng nhập</button>
+            <hr />
+            <p class="or">Khác</p>
+            <button type="button" class="Facebook-btn">Đăng nhập với Facebook</button>
+            <button type="button" class="Gmail-btn">Đăng nhập với Gmail</button>
+            <p>Bạn đã có tài khoản trước đây?<a href="#">Đăng nhập</a></p>
+            @RenderBody()
+        </form>
+    </div>
+</body>
+</html>
